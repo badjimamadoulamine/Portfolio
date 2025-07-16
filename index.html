@@ -4,7 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Badji</title>
-  <link rel="stylesheet" href="style/css">
+  <style>
+    :root {
+      --primary: #0a66c2;
+      --bg: #f4f4f4;
+      --text: #333;
+      --box: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: white;
+      color: var(--text);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      background: var(--primary);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 2rem;
+      border: 3px solid white;
+    }
+
+    .intro {
+      flex: 1;
+    }
+
+    .intro h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .intro p {
+      margin: 0.3rem 0;
+    }
+
+    .intro button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .intro button:hover {
+      background: #e6e6e6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background: var(--box);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 45%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: var(--primary);
+    }
+
+    footer {
+      background: var(--bg);
+      padding: 1rem;
+      text-align: center;
+      color: #666;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-bottom: 1rem;
+      }
+
+      .section-group {
+        flex-direction: column;
+      }
+
+      .intro {
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,7 +140,7 @@
   <div class="intro">
     <h1>Mamadou Lamine Badji</h1>
     <p>Développeur Multimédia | Passionné du Web et Numérique</p>
-    <p><strong>Email :</strong> Guédiawaye</p>
+    <p><strong>Adresse :</strong> Guédiawaye</p>
     <p><strong>Téléphone :</strong> +221 77 831 45 21</p>
     <button onclick="contact()">Me joindre</button>
   </div>
@@ -31,7 +158,7 @@
       <ul>
         <li><strong>Stagiaire Monteur Vidéo</strong> – Go Media (Juil. 2024 – Oct. 2024)</li>
         <li><strong>Développeur Web Stagiaire</strong> – Jabba Groupe (Nov. 2021 – Mai 2022)</li>
-        <li><strong>Surveillant permanent</strong> – UN-CHK (2025 - Présent)</li>
+        <li><strong>Surveillant Permanent</strong> – UN-CHK (2025 - Présent)</li>
         <li><strong>Commission d’Accueil</strong> – ENO Guédiawaye (2020 – 2023)</li>
       </ul>
     </div>
